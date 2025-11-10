@@ -25,7 +25,7 @@ class ClapTrap
 		std::string 		_name;
 		int					_hitPoint;
 		int					_energyPoint;
-		static const int	_attackDamage = 0;
+		int					_attackDamage;
 };
 
 #endif /* CLAPTRAP_HPP */
