@@ -11,4 +11,6 @@ int main( void ) {
     cl4ptrap.ClapTrap::debug();
     cl4ptrap.attack("Butt stallion");
     cl4ptrap.whoAmI();
+    cl4ptrap.guardGate();
+    cl4ptrap.highFivesGuys();
 }
