@@ -4,7 +4,7 @@
 #include "string"
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
     public:
         FragTrap();
@@ -13,9 +13,9 @@ class FragTrap : public ClapTrap
         FragTrap& operator=(const FragTrap& other);
         ~FragTrap();
 
-        void highFivesGuys(void);
+        void highFivesGuys();
 
-    private:
+    protected:
         static unsigned int const    _setHitPoint = 100;
         static unsigned int const    _setEnergyPoint = 100;
         static unsigned int const    _setAttackDamage = 30;

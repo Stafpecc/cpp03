@@ -11,18 +11,18 @@ class ClapTrap
         ClapTrap(std::string name);
         ClapTrap& operator=(const ClapTrap& other);
 
-        virtual void attack(const std::string& target);
+        void attack(const std::string& target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
-        virtual void debug();
+        void debug();
 
         virtual ~ClapTrap();
 
-    private:
-        std::string _name;
-        int         _hitPoint;
-        int         _energyPoint;
-        int         _attackDamage;
+    protected:
+        std::string     name;
+        unsigned int    hitPoint;
+        unsigned int    energyPoint;
+        unsigned int    attackDamage;
 };
 
 #endif /* CLAPTRAP_HPP */

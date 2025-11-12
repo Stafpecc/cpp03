@@ -4,7 +4,7 @@
 #include "string"
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
     public:
         ScavTrap();
@@ -19,8 +19,6 @@ class ScavTrap : public ClapTrap
 
     protected:
         bool    gateKeeperMode;
-
-    private:
         static unsigned int const    _setHitPoint = 100;
         static unsigned int const    _setEnergyPoint = 50;
         static unsigned int const    _setAttackDamage = 20;

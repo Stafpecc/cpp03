@@ -1,4 +1,4 @@
-#include "FragTrap.hpp"
+#include "../includes/FragTrap.hpp"
 #include "iostream"
 
 FragTrap::FragTrap() : ClapTrap() {
@@ -35,6 +35,6 @@ FragTrap::~FragTrap() {
     std::cout << "FragTrap destructor called" << std::endl;
 }
 
-void FragTrap::highFivesGuys(void) {
+void FragTrap::highFivesGuys() {
     std::cout << "High-fives bro ?" << std::endl;
 }

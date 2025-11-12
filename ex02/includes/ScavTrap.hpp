@@ -17,12 +17,13 @@ class ScavTrap : public ClapTrap
         void guardGate();
         void debug();
 
+    protected:
+        bool    gateKeeperMode;
+
     private:
-        std::string _name;
-        int         _hitPoint;
-        int         _energyPoint;
-        int         _attackDamage;
-        bool        _gateKeeperMode;
+        static unsigned int const    _setHitPoint = 100;
+        static unsigned int const    _setEnergyPoint = 50;
+        static unsigned int const    _setAttackDamage = 20;
 };
 
 #endif /* SCAVTRAP_HPP */
