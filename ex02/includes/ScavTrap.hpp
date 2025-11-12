@@ -16,6 +16,13 @@ class ScavTrap : public ClapTrap
         void attack(const std::string& target);
         void guardGate();
         void debug();
+
+    private:
+        std::string _name;
+        int         _hitPoint;
+        int         _energyPoint;
+        int         _attackDamage;
+        bool        _gateKeeperMode;
 };
 
 #endif /* SCAVTRAP_HPP */

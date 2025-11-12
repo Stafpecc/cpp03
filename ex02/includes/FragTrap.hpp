@@ -16,6 +16,12 @@ class FragTrap : public ClapTrap
         void attack(const std::string& target);
         void debug();
         void highFivesGuys(void);
+    
+    private:
+        std::string _name;
+        int         _hitPoint;
+        int         _energyPoint;
+        int         _attackDamage;
 };
 
 #endif /* FRAGTRAP_HPP */
