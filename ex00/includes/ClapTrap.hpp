@@ -21,7 +21,6 @@ class ClapTrap
 		~ClapTrap();
 
 	private:
-
 		std::string 		_name;
 		int					_hitPoint;
 		int					_energyPoint;
